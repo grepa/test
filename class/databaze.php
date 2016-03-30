@@ -87,7 +87,7 @@ class databaze
 
 
 	    if($this->db_num_rows($tabulka)==0){
-			
+			//vytvori tabulku
 			$this->db_query('CREATE TABLE IF NOT EXISTS `log_sql` (
 																  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
 																  `id_admin` int(10) unsigned NOT NULL,
