@@ -8,14 +8,14 @@ class databaze
 	private $jaky;
 	private $soubor;
 	private $konektor;
-	private $verze=1.02;
+	private $verze=1.03;
 	private $logovani=1;
 	
 	public function __construct($jaky,$soubor){
 		  
 		  if($jaky=='billing'){
                         $server = "localhost";
-                        $logindb = "****t"; 
+                        $logindb = "*****"; 
                         $heslo = "****"; 
                         $databaze = "***";
                         $mysql=mysqli_connect($server, $logindb, $heslo,$databaze) or die("Nepodarilo se pripojit k databazi"); 
